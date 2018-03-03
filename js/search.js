@@ -1,19 +1,20 @@
 // NYT Search JS
 
 
-var URL = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-URL += '?' + $.param({
-  'api-key': "67889b89197849c38d3b8ad358a43165"
+var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+url += '?' + $.param({
+  'api-key': "67889b89197849c38d3b8ad358a43165",
+  'q': searchTerm;
 });
-
 $.ajax({
-  URL: URL,
+  url: url,
   method: 'GET',
 }).done(function(result) {
   console.log(result);
 }).fail(function(err) {
   throw err;
 });
+
 
 
 
