@@ -17,33 +17,39 @@
 
     <main role="main" class="container">
 
-        <div class="row">
-            <h1>New York Times Search</h1>
+        <div class="row jumbotron">
+            <h1> New York Times Search</h1>
         </div>
-        <div id="search-parameter-title">Search Parameters</div>
-        <form>
-            <div class="form-group">
-                <label for="searchTerm">Search Term: </label>
-                <input type="text" class="form-control" id="searchTerm" placeholder="search term">
-            </div>
-            <div class="form-group">
-                <label for="numberOfRecords">Number of Records to Retrieve: </label>
-                <input type="number" class="form-control" id="numberOfRecords">
-            </div>
-            <div class="form-group">
-                <label for="startYear">Start Year (Optional): </label>
-                <input type="number" class="form-control" id="startYear">
-            </div>
-            <div class="form-group">
-                <label for="endYear">End Year (Optional):  </label>
-                <input type="number" class="form-control" id="endYear">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="reset" class="btn btn-primary">Clear Results</button>
-        </form>
+        <div  class="card form-cards" >
+            
+             <div  class="card-header" id="search-parameter-title">Search Parameters
+             </div>
+            <form >
+                <div class="form-group">
+                    <label for="searchTerm">Search Term: </label>
+                    <input type="text" class="form-control" id="searchTerm" placeholder="search term">
+                </div>
+                <div class="form-group">
+                    <label for="numberOfRecords">Number of Records to Retrieve: </label>
+                    <input type="number" class="form-control" id="numberOfRecords">
+                </div>
+                <div class="form-group">
+                    <label for="startYear">Start Year (Optional): </label>
+                    <input type="number" class="form-control" id="startYear">
+                </div>
+                <div class="form-group">
+                    <label for="endYear">End Year (Optional):  </label>
+                    <input type="number" class="form-control" id="endYear">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-primary">Clear Results</button>
+            </form>
+        </div>
         
-        <div id="top-articles-title">Top Articles</div>
-        <div id="top-articles-here"></div>
+        <div id="top-articles-title" class="card form-cards" >
+                <div  class="card-header" id="top-articles-title">Top Articles</div>
+            <div id="top-articles-here"> </div>
+        </div>
 
     </main>
 
